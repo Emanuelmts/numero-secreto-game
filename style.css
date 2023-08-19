@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+ :root {
+    --font-family: 'Barriecito', cursive;
+    --cor-primaria: #EEEEEE;
+    --cor-secundaria: #D65A31;
+    --cor-fundo: #393E46;
+ }
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1{
+    font-size: 5em;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box {
+    border: 2px solid var(--cor-secundaria);
+    display: inline-block;
+    font-size: 4em;
+    padding: 15px;
+    margin: 20px;
+}
+
+#menor-valor, #maior-valor, #numeroCerto{
+    color: var(--cor-secundaria);
+}
+
+.btn-jogar {
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.5em;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    margin-top: 30px;
+}
+
+.btn-jogar:active {
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+}
+
+.rodape {
+    font-family:Verdana, Tahoma, sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    background: rgb(37, 30, 27);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
