@@ -10,7 +10,7 @@ Jogo baseado em adivinhaação de número pseudo-aleatório escolhido para ser a
 
 
 ## 🌐 Acesso
-Para acessar o jogo, você pode utilizar o deploy online <a href="https://numero-secreto-game-ten.vercel.app/" target="_blank">clicando aqui</a> e se divertindo!
+Para acessar o jogo, você pode utilizar o deploy online <a href="https://numero-secreto-game-ten.vercel.app/" target="_blank" rel="noopener noreferrer">clicando aqui</a> e se divertindo!
 
 Para finalizar o jogo, acerte o número ✅ ou diga "GAME OVER" ❌
 
