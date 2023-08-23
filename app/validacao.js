@@ -1,7 +1,6 @@
 function verificaSeOChutePossuiUmValorValido(chute) {
     const fundo = document.getElementById('body')
     const numero = parseInt(chute)
-    const validador = true
 
     if (chute == 'Game Over.') {
        document.body.innerHTML = `
@@ -11,38 +10,34 @@ function verificaSeOChutePossuiUmValorValido(chute) {
        <button id="jogar-novamente" class="btn-jogar"><i class="fa-solid fa-arrows-rotate"></i>  Jogar novamente</button>
        `
        fundo.style.backgroundColor = '#ec5353'
-       validador = false
     } 
 
-    while (validador == true) {
         
-        if (chuteForInvalido(numero)) {
+    if (chuteForInvalido(numero)) {
         elementoChute.innerHTML+= "<div>Valor inválido</div>"
         return
-        }
+    }
 
-        if (numeroForMaiorOuMenorQueORange(numero)) {
+    if (numeroForMaiorOuMenorQueORange(numero)) {
         elementoChute.innerHTML += `<div>Valor inválido: diga um número entre ${menorValor} e ${maiorValor}</div>`
         return
-        }
+    }
 
-        if (numero == numeroSecreto) {
+    if (numero == numeroSecreto) {
         document.body.innerHTML = `
         <h1>Você Acertou!!!!</h1>
         <h3>O número secreto era <span id='numeroCerto'>${numeroSecreto}</span></h3>
 
         <button id="jogar-novamente" class="btn-jogar"><i class="fa-solid fa-arrows-rotate"></i>  Jogar novamente</button>
         `
-        } else if (numero > numeroSecreto) {
+    } else if (numero > numeroSecreto) {
         elementoChute.innerHTML += `
         <div>O número secreto é menor <i class="fa-solid fa-circle-arrow-down"></i></div>
         `
-        } else {
+    } else {
         elementoChute.innerHTML += `
         <div>O número secreto é maior <i class="fa-solid fa-circle-arrow-up"></i></div>
         `
-        }
-
     }
 }
 
